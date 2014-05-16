@@ -21,6 +21,7 @@
 VALUES ('$fname','$lname','$email','$cno','$occ','$Add')");
 
 mysqli_close($con);
+// This is message send back to the app after successful insertion
     $response = array(
         'success' => true,
         'message' => 'Success: ' . $_POST["firstName"] . " " . $_POST["lastName"]
